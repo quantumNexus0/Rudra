@@ -1,0 +1,1661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rudraksha - Industrial & Home Heating Solutions</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Discover Rudraksha's wide range of heating elements and filaments for industrial and residential use. We offer cartridge heaters, tubular heaters, mica heaters, strip heaters, ceramic heaters, immersion heaters, heat sensors, and custom solutions. Enhance efficiency, productivity, and sustainability with our advanced heating technologies and 24/7 technical support.">
+     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        overflow-x: hidden;
+      }
+
+      /* Navigation */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(20px);
+        z-index: 1000;
+        padding: 1rem 0;
+        transition: all 0.3s ease;
+      }
+
+      nav.scrolled {
+        background: rgba(15, 23, 42, 0.98);
+        padding: 0.5rem 0;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #f97316;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+
+      .logo:hover {
+        transform: scale(1.05);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        position: relative;
+      }
+
+      .nav-links a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background: #f97316;
+        transition: width 0.3s ease;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      .nav-links a:hover {
+        color: #f97316;
+      }
+
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+
+      .menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        margin: 3px 0;
+        transition: 0.3s;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        background: linear-gradient(
+          135deg,
+          #0f172a 0%,
+          #1e293b 50%,
+          #334155 100%
+        );
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23ffffff" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+        animation: float 20s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .hero-content {
+        max-width: 800px;
+        z-index: 2;
+        position: relative;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        background: linear-gradient(45deg, #f97316, #fb923c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: slideInUp 1s ease-out;
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+        animation: slideInUp 1s ease-out 0.3s both;
+      }
+
+      .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        animation: slideInUp 1s ease-out 0.6s both;
+      }
+
+      .btn {
+        padding: 15px 30px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-primary {
+        background: linear-gradient(45deg, #f97316, #fb923c);
+        color: white;
+        box-shadow: 0 10px 30px rgba(249, 115, 22, 0.3);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(249, 115, 22, 0.4);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: white;
+        border: 2px solid #f97316;
+      }
+
+      .btn-secondary:hover {
+        background: #f97316;
+        transform: translateY(-3px);
+      }
+
+      @keyframes slideInUp {
+        from {
+          opacity: 0;
+          transform: translateY(60px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Products Section */
+      .products {
+        padding: 100px 0;
+        background: #f8fafc;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        color: #1e293b;
+        margin-bottom: 1rem;
+      }
+
+      .section-title p {
+        font-size: 1.1rem;
+        color: #64748b;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+
+      .product-card {
+        background: white;
+        border-radius: 20px;
+        padding: 0;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .product-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #f97316, #fb923c);
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        z-index: 2;
+      }
+
+      .product-card:hover::before {
+        transform: scaleX(1);
+      }
+
+      .product-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+      }
+
+      .product-image {
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
+      .product-image img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .product-image img:hover {
+        transform: scale(1.05);
+      }
+
+      .product-content {
+        padding: 2rem;
+      }
+
+      .product-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+      }
+
+      .product-card h3 {
+        font-size: 1.4rem;
+        color: #1e293b;
+        margin-bottom: 0.5rem;
+        flex: 1;
+      }
+
+      .product-price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #f97316;
+        margin-left: 1rem;
+      }
+
+      .product-code {
+        font-size: 0.9rem;
+        color: #64748b;
+        margin-bottom: 1rem;
+        font-weight: 500;
+      }
+
+      .product-description {
+        color: #64748b;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+        font-size: 0.95rem;
+      }
+
+      .product-specs {
+        background: #f8fafc;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+      }
+
+      .product-specs h4 {
+        font-size: 0.9rem;
+        color: #1e293b;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      .specs-list {
+        list-style: none;
+        font-size: 0.85rem;
+        color: #64748b;
+      }
+
+      .specs-list li {
+        margin-bottom: 0.3rem;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .specs-list li strong {
+        color: #475569;
+      }
+
+      .product-actions {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .whatsapp-btn {
+        background: #25d366;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 25px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        flex: 1;
+        justify-content: center;
+      }
+
+      .whatsapp-btn:hover {
+        background: #128c7e;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+      }
+
+      .quote-btn {
+        background: #f97316;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 25px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 0.9rem;
+        flex: 1;
+      }
+
+      .quote-btn:hover {
+        background: #ea580c;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+      }
+
+      /* About Section */
+      .about {
+        padding: 100px 0;
+        background: white;
+      }
+
+      .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .about-text h2 {
+        font-size: 2.5rem;
+        color: #1e293b;
+        margin-bottom: 1.5rem;
+      }
+
+      .about-text p {
+        font-size: 1.1rem;
+        color: #64748b;
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+      }
+
+      .expertise-list {
+        list-style: none;
+        margin-top: 2rem;
+      }
+
+      .expertise-list li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        color: #475569;
+      }
+
+      .expertise-list li::before {
+        content: "✓";
+        background: #f97316;
+        color: white;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        font-weight: bold;
+      }
+
+      .about-visual {
+        position: relative;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+
+      .stat-card {
+        background: linear-gradient(135deg, #f97316, #fb923c);
+        color: white;
+        padding: 2rem;
+        border-radius: 15px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .stat-card:hover {
+        transform: scale(1.05);
+      }
+
+      .stat-number {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-label {
+        font-size: 0.9rem;
+        opacity: 0.9;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: 100px 0;
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        color: white;
+      }
+
+      .contact-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+      }
+
+      .contact-info h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        color: #f97316;
+      }
+
+      .contact-info p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        opacity: 0.9;
+      }
+
+      .contact-details {
+        list-style: none;
+      }
+
+      .contact-details li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.1rem;
+      }
+
+      .contact-details li::before {
+        content: attr(data-icon);
+        background: #f97316;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        font-size: 1.2rem;
+      }
+
+      .contact-form {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 2rem;
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+      }
+
+      .form-group {
+        margin-bottom: 1.5rem;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #f97316;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+      }
+
+      .form-group input::placeholder,
+      .form-group textarea::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .form-group input:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #f97316;
+        background: rgba(255, 255, 255, 0.15);
+      }
+
+      .form-group textarea {
+        height: 120px;
+        resize: vertical;
+      }
+
+      /* Quote Modal - FIXED FOR RESPONSIVENESS */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        overflow-y: auto;
+        padding: 20px;
+      }
+
+      .modal-content {
+        background: white;
+        margin: 2rem auto;
+        padding: 0;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 500px;
+        max-height: calc(100vh - 4rem);
+        position: relative;
+        animation: slideIn 0.3s ease-out;
+        overflow-y: auto;
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-30px) scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .modal-header {
+        background: linear-gradient(135deg, #f97316, #fb923c);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+      }
+
+      .modal-header h3 {
+        margin: 0;
+        font-size: 1.5rem;
+        padding-right: 40px;
+      }
+
+      .close {
+        position: absolute;
+        right: 1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        color: white;
+        transition: transform 0.3s ease;
+        background: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .close:hover {
+        transform: translateY(-50%) scale(1.2);
+      }
+
+      .modal-body {
+        padding: 2rem;
+        max-height: calc(100vh - 200px);
+        overflow-y: auto;
+      }
+
+      .modal-body .form-group input,
+      .modal-body .form-group textarea {
+        color: #333;
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+      }
+
+      .modal-body .form-group label {
+        color: #1e293b;
+      }
+
+      /* Floating WhatsApp Button */
+      .floating-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: #25d366;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 1.8rem;
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        z-index: 1500;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        animation: pulse 2s infinite;
+      }
+
+      .floating-whatsapp:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+        color: white;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        }
+        50% {
+          box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
+        }
+        100% {
+          box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+        }
+      }
+
+      /* WhatsApp SVG Icon */
+      .whatsapp-icon {
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+      }
+
+      .floating-whatsapp .whatsapp-icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      /* Footer */
+      .footer {
+        background: #0f172a;
+        color: white;
+        text-align: center;
+        padding: 2rem 0;
+      }
+
+      .footer p {
+        opacity: 0.7;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: flex;
+        }
+
+        .nav-links {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background: rgba(15, 23, 42, 0.98);
+          flex-direction: column;
+          padding: 1rem;
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .hero p {
+          font-size: 1.1rem;
+        }
+
+        .cta-buttons {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .products-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .product-actions {
+          flex-direction: column;
+        }
+
+        .about-content,
+        .contact-content {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .stats-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section-title h2 {
+          font-size: 2rem;
+        }
+
+        .about-text h2,
+        .contact-info h2 {
+          font-size: 2rem;
+        }
+
+        /* Modal responsive fixes */
+        .modal {
+          padding: 10px;
+        }
+
+        .modal-content {
+          margin: 1rem auto;
+          max-height: calc(100vh - 2rem);
+          width: calc(100% - 20px);
+        }
+
+        .modal-header {
+          padding: 1.2rem;
+        }
+
+        .modal-header h3 {
+          font-size: 1.3rem;
+        }
+
+        .modal-body {
+          padding: 1.5rem;
+          max-height: calc(100vh - 150px);
+        }
+
+        .close {
+          right: 1.2rem;
+          font-size: 1.6rem;
+        }
+
+        .floating-whatsapp {
+          bottom: 15px;
+          right: 15px;
+          width: 50px;
+          height: 50px;
+          font-size: 1.5rem;
+        }
+
+        .floating-whatsapp .whatsapp-icon {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 1rem;
+        }
+
+        .nav-container {
+          padding: 0 1rem;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .product-card .product-content,
+        .contact-form {
+          padding: 1.5rem;
+        }
+
+        .products-grid {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+
+        .product-actions {
+          gap: 0.8rem;
+        }
+
+        /* Smaller modal on very small screens */
+        .modal {
+          padding: 5px;
+        }
+
+        .modal-content {
+          margin: 0.5rem auto;
+          max-height: calc(100vh - 1rem);
+        }
+
+        .modal-header {
+          padding: 1rem;
+        }
+
+        .modal-header h3 {
+          font-size: 1.2rem;
+        }
+
+        .modal-body {
+          padding: 1.2rem;
+        }
+
+        .btn {
+          padding: 12px 20px;
+          font-size: 1rem;
+        }
+      }
+
+      /* Landscape mobile fixes */
+      @media (max-height: 500px) and (orientation: landscape) {
+        .modal-content {
+          margin: 0.5rem auto;
+          max-height: calc(100vh - 1rem);
+        }
+
+        .modal-body {
+          max-height: calc(100vh - 120px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">रुद्राक्ष</a>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Advanced Heating Solutions</h1>
+        <p>
+          Leading innovation in industrial and home heating elements. From
+          manufacturing to residential applications, we provide cutting-edge
+          heating technologies designed for efficiency, reliability, and
+          superior performance.
+        </p>
+        <div class="cta-buttons">
+          <a href="#products" class="btn btn-primary">Explore Products</a>
+          <a href="#contact" class="btn btn-secondary">Get Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Heating Solutions</h2>
+          <p>
+            Comprehensive range of heating elements designed for industrial and
+            residential applications
+          </p>
+        </div>
+        <div class="products-grid">
+          <!-- Cartridge Heaters -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/CartridgeHeaters.jpg" alt="Cartridge Heater" />
+            </div>
+            <div class="product-content">
+              <div class="product-header">
+                <h3>Cartridge Heaters</h3>
+                <div class="product-price">₹850</div>
+              </div>
+              <div class="product-code">Product Code: RH-CH-001</div>
+              <p class="product-description">
+                High-performance stainless steel cartridge heaters designed for
+                precision heating applications. Perfect for molds, platens, and
+                packaging equipment.
+              </p>
+              <div class="product-specs">
+                <h4>Specifications:</h4>
+                <ul class="specs-list">
+                  <li><strong>Diameter:</strong> <span>6mm to 25mm</span></li>
+                  <li><strong>Length:</strong> <span>25mm to 500mm</span></li>
+                  <li><strong>Wattage:</strong> <span>50W to 2000W</span></li>
+                  <li>
+                    <strong>Material:</strong> <span>Stainless Steel 316L</span>
+                  </li>
+                  <li><strong>Max Temp:</strong> <span>400°C</span></li>
+                </ul>
+              </div>
+               <div class="product-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hi, I'm interested in Coil Heaters (RH-COH-015). Please provide more details."
+                  class="whatsapp-btn"
+                >
+                  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <button
+                  class="quote-btn"
+                  onclick="openQuoteModal('Cartridge Heaters')"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tubular Heaters -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/tubular-heaters.webp" alt="Tubular Heater" />
+            </div>
+            <div class="product-content">
+              <div class="product-header">
+                <h3>Tubular Heaters</h3>
+                <div class="product-price">₹750</div>
+              </div>
+              <div class="product-code">Product Code: RH-TUH-005</div>
+              <p class="product-description">
+                Versatile tubular heating elements suitable for air heating,
+                liquid heating, and general industrial heating applications.
+              </p>
+              <div class="product-specs">
+                <h4>Specifications:</h4>
+                <ul class="specs-list">
+                  <li><strong>Diameter:</strong> <span>6.5mm to 32mm</span></li>
+                  <li><strong>Length:</strong> <span>100mm to 6000mm</span></li>
+                  <li><strong>Power:</strong> <span>100W to 10kW</span></li>
+                  <li>
+                    <strong>Sheath:</strong>
+                    <span>Stainless Steel/Incoloy</span>
+                  </li>
+                  <li><strong>Max Temp:</strong> <span>850°C</span></li>
+                </ul>
+              </div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hi, I'm interested in Coil Heaters (RH-COH-015). Please provide more details."
+                  class="whatsapp-btn"
+                >
+                  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <button
+                  class="quote-btn"
+                  onclick="openQuoteModal('Tubular Heaters')"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Band Heaters -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/MicaHeaters.jpg" alt="Band Heater" />
+            </div>
+            <div class="product-content">
+              <div class="product-header">
+                <h3>Band Heaters</h3>
+                <div class="product-price">₹1,100</div>
+              </div>
+              <div class="product-code">Product Code: RH-BH-006</div>
+              <p class="product-description">
+                Mica band heaters and ceramic band heaters for plastic
+                processing, extrusion machines, and cylindrical heating
+                applications.
+              </p>
+              <div class="product-specs">
+                <h4>Specifications:</h4>
+                <ul class="specs-list">
+                  <li><strong>Diameter:</strong> <span>20mm to 500mm</span></li>
+                  <li><strong>Width:</strong> <span>25mm to 200mm</span></li>
+                  <li><strong>Power:</strong> <span>100W to 5kW</span></li>
+                  <li><strong>Type:</strong> <span>Mica/Ceramic</span></li>
+                  <li><strong>Max Temp:</strong> <span>450°C</span></li>
+                </ul>
+              </div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hi, I'm interested in Coil Heaters (RH-COH-015). Please provide more details."
+                  class="whatsapp-btn"
+                >
+                  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <button
+                  class="quote-btn"
+                  onclick="openQuoteModal('Band Heaters')"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </div>
+
+           <!-- Immersion Heaters -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/ImmersionHeater.jpg" alt="Immersion Heater" />
+            </div>
+            <div class="product-content">
+              <div class="product-header">
+                <h3>Immersion Heaters</h3>
+                <div class="product-price">₹1,250</div>
+              </div>
+              <div class="product-code">Product Code: RH-IH-010</div>
+              <p class="product-description">
+                Industrial immersion heaters for heating liquids, oils, and chemicals. Perfect for tanks, boilers, and industrial processes requiring direct liquid heating.
+              </p>
+              <div class="product-specs">
+                <h4>Specifications:</h4>
+                <ul class="specs-list">
+                  <li><strong>Length:</strong> <span>300mm to 2000mm</span></li>
+                  <li><strong>Power:</strong> <span>1kW to 50kW</span></li>
+                  <li><strong>Element:</strong> <span>Incoloy 800/316SS</span></li>
+                  <li><strong>Flange:</strong> <span>Standard/Custom</span></li>
+                  <li><strong>Max Temp:</strong> <span>650°C</span></li>
+                </ul>
+              </div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hi, I'm interested in Immersion Heaters (RH-IH-010). Please provide more details."
+                  class="whatsapp-btn"
+                >
+                  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <button
+                  class="quote-btn"
+                  onclick="openQuoteModal('Immersion Heaters')"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coil Heaters -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/CoilHotRunners.jpg" alt="Coil Heater" />
+            </div>
+            <div class="product-content">
+              <div class="product-header">
+                <h3>Coil Heaters</h3>
+                <div class="product-price">₹950</div>
+              </div>
+              <div class="product-code">Product Code: RH-COH-015</div>
+              <p class="product-description">
+                Flexible coil heaters for wrapping around pipes, vessels, and irregular shapes. Ideal for maintaining temperature in pipelines and storage tanks.
+              </p>
+              <div class="product-specs">
+                <h4>Specifications:</h4>
+                <ul class="specs-list">
+                  <li><strong>Diameter:</strong> <span>10mm to 100mm</span></li>
+                  <li><strong>Length:</strong> <span>1m to 50m</span></li>
+                  <li><strong>Power:</strong> <span>50W to 10kW</span></li>
+                  <li><strong>Sheath:</strong> <span>Stainless Steel</span></li>
+                  <li><strong>Max Temp:</strong> <span>400°C</span></li>
+                </ul>
+              </div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hi, I'm interested in Coil Heaters (RH-COH-015). Please provide more details."
+                  class="whatsapp-btn"
+                >
+                  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <button
+                  class="quote-btn"
+                  onclick="openQuoteModal('Coil Heaters')"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </div>
+           <!-- Immersion Heaters -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/IRGlassHeater.jpg" alt="Immersion Heater" />
+            </div>
+            <div class="product-content">
+              <div class="product-header">
+                <h3>Immersion Heaters</h3>
+                <div class="product-price">₹1,250</div>
+              </div>
+              <div class="product-code">Product Code: RH-IH-010</div>
+              <p class="product-description">
+                Industrial immersion heaters for heating liquids, oils, and chemicals. Perfect for tanks, boilers, and industrial processes requiring direct liquid heating.
+              </p>
+              <div class="product-specs">
+                <h4>Specifications:</h4>
+                <ul class="specs-list">
+                  <li><strong>Length:</strong> <span>300mm to 2000mm</span></li>
+                  <li><strong>Power:</strong> <span>1kW to 50kW</span></li>
+                  <li><strong>Element:</strong> <span>Incoloy 800/316SS</span></li>
+                  <li><strong>Flange:</strong> <span>Standard/Custom</span></li>
+                  <li><strong>Max Temp:</strong> <span>650°C</span></li>
+                </ul>
+              </div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hi, I'm interested in Immersion Heaters (RH-IH-010). Please provide more details."
+                  class="whatsapp-btn"
+                >
+                  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <button
+                  class="quote-btn"
+                  onclick="openQuoteModal('Immersion Heaters')"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coil Heaters -->
+          <div class="product-card">
+            <div class="product-image">
+              <img src="/images/CoilHotRunners.jpg" alt="Coil Heater" />
+            </div>
+            <div class="product-content">
+              <div class="product-header">
+                <h3>Coil Heaters</h3>
+                <div class="product-price">₹950</div>
+              </div>
+              <div class="product-code">Product Code: RH-COH-015</div>
+              <p class="product-description">
+                Flexible coil heaters for wrapping around pipes, vessels, and irregular shapes. Ideal for maintaining temperature in pipelines and storage tanks.
+              </p>
+              <div class="product-specs">
+                <h4>Specifications:</h4>
+                <ul class="specs-list">
+                  <li><strong>Diameter:</strong> <span>10mm to 100mm</span></li>
+                  <li><strong>Length:</strong> <span>1m to 50m</span></li>
+                  <li><strong>Power:</strong> <span>50W to 10kW</span></li>
+                  <li><strong>Sheath:</strong> <span>Stainless Steel</span></li>
+                  <li><strong>Max Temp:</strong> <span>400°C</span></li>
+                </ul>
+              </div>
+              <div class="product-actions">
+                <a
+                  href="https://wa.me/919876543210?text=Hi, I'm interested in Coil Heaters (RH-COH-015). Please provide more details."
+                  class="whatsapp-btn"
+                >
+                  <svg class="whatsapp-icon" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+                  </svg>
+                  WhatsApp
+                </a>
+                <button
+                  class="quote-btn"
+                  onclick="openQuoteModal('Coil Heaters')"
+                >
+                  Get Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Rudraksha</h2>
+            <p>
+              At Rudraksha, we are at the forefront of innovation, providing
+              cutting-edge industrial heating solutions to propel your business
+              towards unparalleled efficiency and success. With a passion for
+              excellence and a commitment to delivering top-notch products and
+              services, we stand as your trusted partner in the world of
+              industrial heating.
+            </p>
+
+            <p>
+              Backed by years of experience and a team of skilled professionals,
+              Rudraksha Industrial Heating Solutions specializes in crafting
+              bespoke industrial heaters and heat sensors tailored to meet the
+              unique demands of your industry. Whether you're in manufacturing,
+              processing, or any other industrial sector, our state-of-the-art
+              technologies are designed to optimize your operations, reduce
+              costs, and enhance overall productivity.
+            </p>
+
+            <ul class="expertise-list">
+              <li>Advanced Industrial Heating Technologies</li>
+              <li>Residential Heating Solutions</li>
+              <li>Custom Engineering & Design</li>
+              <li>Quality Assurance & Testing</li>
+              <li>24/7 Technical Support</li>
+              <li>Sustainable Energy Solutions</li>
+            </ul>
+          </div>
+          <div class="about-visual">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Product Variants</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support Available</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>
+              Ready to transform your heating systems? Contact us today for
+              personalized solutions that meet your specific requirements.
+            </p>
+            <ul class="contact-details">
+              <li data-icon="📍">
+                123 Industrial Avenue, Manufacturing District, City 560001
+              </li>
+              <li data-icon="📞">+91 98765 43210</li>
+              <li data-icon="✉️">info@rudraksha-heating.com</li>
+              <li data-icon="🌐">www.rudraksha-heating.com</li>
+            </ul>
+          </div>
+          <div class="contact-form">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="Tell us about your heating requirements..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Rudraksha Industrial Heating Solutions. All rights
+          reserved. | Innovating the Future of Heating Technology
+        </p>
+      </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Get Quote</h3>
+          <span class="close" onclick="closeQuoteModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+          <form id="quote-form">
+            <div class="form-group">
+              <label for="quote-product">Product</label>
+              <input type="text" id="quote-product" name="product" readonly />
+            </div>
+            <div class="form-group">
+              <label for="quote-name">Full Name</label>
+              <input type="text" id="quote-name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="quote-email">Email Address</label>
+              <input type="email" id="quote-email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="quote-phone">Phone Number</label>
+              <input type="tel" id="quote-phone" name="phone" required />
+            </div>
+            <div class="form-group">
+              <label for="quote-quantity">Quantity Required</label>
+              <input
+                type="number"
+                id="quote-quantity"
+                name="quantity"
+                min="1"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="quote-requirements">Specific Requirements</label>
+              <textarea
+                id="quote-requirements"
+                name="requirements"
+                placeholder="Please specify your requirements, dimensions, power ratings, etc."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              Submit Quote Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+<a
+  href="https://wa.me/919876543210?text=Hi, I'm interested in your heating solutions. Can you help me?"
+  class="floating-whatsapp"
+  target="_blank"
+>
+  <svg class="whatsapp-icon" viewBox="0 0 24 24" width="32" height="32" fill="green">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.69"/>
+  </svg>
+</a>
+
+
+    <script>
+      // Navigation scroll effect
+      window.addEventListener("scroll", function () {
+        const navbar = document.getElementById("navbar");
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+
+      // Mobile menu toggle
+      const menuToggle = document.getElementById("menu-toggle");
+      const navLinks = document.getElementById("nav-links");
+
+      menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+            // Close mobile menu if open
+            navLinks.classList.remove("active");
+          }
+        });
+      });
+
+      // Quote Modal Functions
+      function openQuoteModal(productName) {
+        const modal = document.getElementById("quoteModal");
+        const productInput = document.getElementById("quote-product");
+        productInput.value = productName;
+        modal.style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeQuoteModal() {
+        const modal = document.getElementById("quoteModal");
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+
+      // Close modal when clicking outside
+      window.addEventListener("click", function (event) {
+        const modal = document.getElementById("quoteModal");
+        if (event.target === modal) {
+          closeQuoteModal();
+        }
+      });
+
+      // Quote form handling
+      document
+        .getElementById("quote-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(this);
+          const data = Object.fromEntries(formData);
+
+          // Create WhatsApp message
+          const message = `Hi, I would like to get a quote for:
+Product: ${data.product}
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Quantity: ${data.quantity}
+Requirements: ${data.requirements || "Standard specifications"}`;
+
+          const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(
+            message
+          )}`;
+
+          // Simulate form submission
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.textContent;
+
+          submitBtn.textContent = "Redirecting to WhatsApp...";
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            window.open(whatsappUrl, "_blank");
+            closeQuoteModal();
+            this.reset();
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+          }, 1000);
+        });
+
+      // Contact form handling
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(this);
+          const data = Object.fromEntries(formData);
+
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.textContent;
+
+          submitBtn.textContent = "Sending...";
+          submitBtn.disabled = true;
+
+          setTimeout(() => {
+            alert("Thank you for your message! We will get back to you soon.");
+            this.reset();
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+          }, 1500);
+        });
+
+      // Add intersection observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -100px 0px",
+      };
+
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe product cards and other elements
+      document.querySelectorAll(".product-card, .stat-card").forEach((el) => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(30px)";
+        el.style.transition = "all 0.6s ease-out";
+        observer.observe(el);
+      });
+
+      // Add floating animation to hero background
+      const hero = document.querySelector(".hero");
+      let mouseX = 0;
+      let mouseY = 0;
+
+      hero.addEventListener("mousemove", function (e) {
+        mouseX = e.clientX / window.innerWidth;
+        mouseY = e.clientY / window.innerHeight;
+
+        const moveX = (mouseX - 0.5) * 20;
+        const moveY = (mouseY - 0.5) * 20;
+
+        this.style.backgroundPosition = `${50 + moveX}% ${50 + moveY}%`;
+      });
+
+      // Keyboard accessibility for modal
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeQuoteModal();
+        }
+      });
+    </script>
+  </body>
+</html>
